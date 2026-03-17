@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { toUrl } from '@/lib/utils';
 import { home } from '@/routes';
-import { Twitch, YouTube, Odysee, BlueSky } from '@/routes/Socials';
+import { Twitch, YouTube, BlueSky, Linktree } from '@/routes/Socials';
 
 const socialLinks = [
     {
@@ -19,14 +19,14 @@ const socialLinks = [
         color: "text-youtube hover:text-youtube/75",
     },
     {
-        title: "odysee",
-        href: Odysee().url,
-        color: "text-odysee hover:text-odysee/75",
-    },
-    {
         title: "bluesky",
         href: BlueSky().url,
         color: "text-bluesky hover:text-bluesky/75",
+    },
+    {
+        title: "linktree",
+        href: Linktree().url,
+        color: "text-linktree hover:text-linktree/75",
     },
 ];
 </script>
