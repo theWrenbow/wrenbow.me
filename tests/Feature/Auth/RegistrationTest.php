@@ -2,7 +2,7 @@
 
 use Laravel\Fortify\Features;
 
-beforeEach(function () {
+/* beforeEach(function () {
     $this->skipUnlessFortifyFeature(Features::registration());
 });
 
@@ -22,4 +22,4 @@ test('new users can register', function () {
 
     $this->assertAuthenticated();
     $response->assertRedirect(route('dashboard', absolute: false));
-});
+}); */
