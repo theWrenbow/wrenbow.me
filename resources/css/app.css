@@ -13,6 +13,11 @@
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
+    --font-mono:
+        "SF Mono", SFMono, "SF Mono Regular", "SFMono Regular",
+        SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
@@ -41,6 +46,15 @@
     --color-destructive: var(--destructive);
     --color-destructive-foreground: var(--destructive-foreground);
 
+    --color-warning: var(--warning);
+    --color-warning-foreground: var(--warning-foreground);
+
+    --color-info: var(--info);
+    --color-info-foreground: var(--info-foreground);
+
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
+
     --color-border: var(--border);
     --color-input: var(--input);
     --color-ring: var(--ring);
@@ -59,6 +73,69 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-wren-main: var(--wren-sand);
+    --color-wren-accent: var(--wren-twilight);
+
+    --color-sand-50: var(--wren-sand-50);
+    --color-sand-100: var(--wren-sand-100);
+    --color-sand-200: var(--wren-sand-200);
+    --color-sand-300: var(--wren-sand-300);
+    --color-sand-400: var(--wren-sand-400);
+    --color-sand-500: var(--wren-sand-500);
+    --color-sand-600: var(--wren-sand-600);
+    --color-sand-700: var(--wren-sand-700);
+    --color-sand-800: var(--wren-sand-800);
+    --color-sand-900: var(--wren-sand-900);
+    --color-sand-950: var(--wren-sand-950);
+
+    --color-twilight-50: var(--wren-twilight-50);
+    --color-twilight-100: var(--wren-twilight-100);
+    --color-twilight-200: var(--wren-twilight-200);
+    --color-twilight-300: var(--wren-twilight-300);
+    --color-twilight-400: var(--wren-twilight-400);
+    --color-twilight-500: var(--wren-twilight-500);
+    --color-twilight-600: var(--wren-twilight-600);
+    --color-twilight-700: var(--wren-twilight-700);
+    --color-twilight-800: var(--wren-twilight-800);
+    --color-twilight-900: var(--wren-twilight-900);
+    --color-twilight-950: var(--wren-twilight-950);
+
+    --color-twitch: var(--twitch);
+    --color-youtube: var(--youtube);
+    --color-odysee: var(--odysee);
+    --color-kick: var(--kick);
+    --color-tiktok: var(--tiktok);
+    --color-twitter: var(--twitter);
+    --color-bluesky: var(--bluesky);
+    --color-mastodon: var(--mastodon);
+    --color-mastodon-2: var(--mastodon-2);
+    --color-mastodon-3: var(--mastodon-3);
+    --color-mastodon-4: var(--mastodon-4);
+    --color-mastodon-5: var(--mastodon-5);
+    --color-instagram: var(--instagram);
+    --color-linktree: var(--linktree);
+    --color-linktree-2: var(--linktree-2);
+    --color-linktree-3: var(--linktree-3);
+    --color-reddit: var(--reddit);
+    --color-riot: var(--riot);
+    --color-valorant: var(--valorant);
+    --color-steam: var(--steam);
+    --color-steam-2: var(--steam-2);
+
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+        @keyframes wiggle {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
 }
 
 /*
@@ -104,17 +181,17 @@
     --muted-foreground: hsl(0 0% 45.1%);
     --accent: hsl(0 0% 96.1%);
     --accent-foreground: hsl(0 0% 9%);
-    --destructive: hsl(0 84.2% 60.2%);
+    --destructive: oklch(0.577 0.245 27.325);
     --destructive-foreground: hsl(0 0% 98%);
     --border: hsl(0 0% 92.8%);
     --input: hsl(0 0% 89.8%);
     --ring: hsl(0 0% 3.9%);
-    --chart-1: hsl(12 76% 61%);
-    --chart-2: hsl(173 58% 39%);
-    --chart-3: hsl(197 37% 24%);
-    --chart-4: hsl(43 74% 66%);
-    --chart-5: hsl(27 87% 67%);
-    --radius: 0.5rem;
+    --chart-1:  oklch(0.646 0.222 41.116);
+    --chart-2:  oklch(0.6 0.118 184.704);
+    --chart-3:  oklch(0.398 0.07 227.392);
+    --chart-4:  oklch(0.828 0.189 84.429);
+    --chart-5:  oklch(0.769 0.188 70.08);
+    --radius: 0.65rem;
     --sidebar-background: hsl(0 0% 98%);
     --sidebar-foreground: hsl(240 5.3% 26.1%);
     --sidebar-primary: hsl(0 0% 10%);
@@ -124,6 +201,62 @@
     --sidebar-border: hsl(0 0% 91%);
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(0 0% 98%);
+
+    --warning: oklch(0.77 0.16 70);
+    --warning-foreground: hsl(21, 84%, 15%);
+    --info: oklch(0.623 0.214 259.815);
+    --info-foreground: hsl(214, 100%, 97%);
+    --success: oklch(72.3% .219 149.579);
+    --success-foreground: hsl(355.7 100% 97.3%);
+
+    --wren-sand: hsl(7, 95%, 85%);
+    --wren-twilight: hsl(221, 28%, 45%);
+
+    --wren-sand-50:  hsl(9, 100%, 97%);
+    --wren-sand-100: hsl(6, 100%, 93%);
+    --wren-sand-200: hsl(7, 97%, 87%);
+    --wren-sand-300: hsl(7, 95%, 85%);
+    --wren-sand-400: hsl(6, 44%, 69%);
+    --wren-sand-500: hsl(6, 29%, 57%);
+    --wren-sand-600: hsl(6, 26%, 47%);
+    --wren-sand-700: hsl(6, 30%, 39%);
+    --wren-sand-800: hsl(5, 34%, 32%);
+    --wren-sand-900: hsl(6, 39%, 27%);
+    --wren-sand-950: hsl(5, 50%, 20%);
+
+    --wren-twilight-50:  hsl(229, 23%, 91%);
+    --wren-twilight-100: hsl(226, 23%, 82%);
+    --wren-twilight-200: hsl(225, 23%, 72%);
+    --wren-twilight-300: hsl(225, 24%, 64%);
+    --wren-twilight-400: hsl(223, 23%, 55%);
+    --wren-twilight-500: hsl(221, 28%, 45%);
+    --wren-twilight-600: hsl(222, 27%, 38%);
+    --wren-twilight-700: hsl(222, 26%, 30%);
+    --wren-twilight-800: hsl(221, 25%, 23%);
+    --wren-twilight-900: hsl(223, 22%, 16%);
+    --wren-twilight-950: hsl(225, 17%, 9%);
+
+    --twitch: hsl(264, 100%, 64%);
+    --youtube: hsl(348, 100%, 50%);
+    --odysee: hsl(338, 100%, 44%);
+    --kick: hsl(104, 97%, 54%);
+    --tiktok: hsl(347, 99%, 58%);
+    --twitter: hsl(203, 89%, 53%);
+    --bluesky: hsl(211, 100%, 57%);
+    --mastodon: hsl(240, 100%, 69%);
+    --mastodon-2: hsl(252, 59%, 51%);
+    --mastodon-3: hsl(259, 82%, 13%);
+    --mastodon-4: hsl(259, 82%, 26%);
+    --mastodon-5: hsl(237, 92%, 75%);
+    --instagram: hsl(335, 100%, 50%);
+    --linktree: hsl(131, 77%, 58%);
+    --linktree-2: hsl(66, 80%, 52%);
+    --linktree-3: hsl(106, 50%, 21%);
+    --reddit: hsl(16, 100%, 50%);
+    --riot: hsl(359, 63%, 52%);
+    --valorant: hsl(355, 100%, 64%);
+    --steam: hsl(202, 87%, 68%);
+    --steam-2: hsl(203, 29%, 11%);
 }
 
 .dark {
@@ -133,7 +266,7 @@
     --card-foreground: hsl(0 0% 98%);
     --popover: hsl(0 0% 3.9%);
     --popover-foreground: hsl(0 0% 98%);
-    --primary: hsl(0 0% 98%);
+    --primary: hsl(7, 95%, 85%);
     --primary-foreground: hsl(0 0% 9%);
     --secondary: hsl(0 0% 14.9%);
     --secondary-foreground: hsl(0 0% 98%);
@@ -146,20 +279,76 @@
     --border: hsl(0 0% 14.9%);
     --input: hsl(0 0% 14.9%);
     --ring: hsl(0 0% 83.1%);
-    --chart-1: hsl(220 70% 50%);
-    --chart-2: hsl(160 60% 45%);
-    --chart-3: hsl(30 80% 55%);
-    --chart-4: hsl(280 65% 60%);
-    --chart-5: hsl(340 75% 55%);
+    --chart-1:  oklch(0.488 0.243 264.376);
+    --chart-2:  oklch(0.696 0.17 162.48);
+    --chart-3:  oklch(0.769 0.188 70.08);
+    --chart-4:  oklch(0.627 0.265 303.9);
+    --chart-5:  oklch(0.645 0.246 16.439);
     --sidebar-background: hsl(0 0% 7%);
     --sidebar-foreground: hsl(0 0% 95.9%);
-    --sidebar-primary: hsl(360, 100%, 100%);
+    --sidebar-primary: hsl(7, 95%, 85%);
     --sidebar-primary-foreground: hsl(0 0% 100%);
     --sidebar-accent: hsl(0 0% 15.9%);
     --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
     --sidebar-border: hsl(0 0% 15.9%);
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(240 5.9% 10%);
+
+    --warning: oklch(0.67 0.16 58);
+    --warning-foreground: hsl(50, 100%, 96%);
+    --info: oklch(0.623 0.214 259.815);
+    --info-foreground: hsl(214, 100%, 97%);
+    --success: oklch(0.723 0.219 149.579);
+    --success-foreground: hsl(355.7 100% 97.3%);
+
+    --wren-sand: hsl(7, 95%, 85%);
+    --wren-twilight: hsl(221, 28%, 45%);
+
+    --wren-sand-50: hsl(9, 100%, 97%);
+    --wren-sand-100: hsl(6, 100%, 93%);
+    --wren-sand-200: hsl(7, 97%, 87%);
+    --wren-sand-300: hsl(7, 95%, 85%);
+    --wren-sand-400: hsl(6, 44%, 69%);
+    --wren-sand-500: hsl(6, 29%, 57%);
+    --wren-sand-600: hsl(6, 26%, 47%);
+    --wren-sand-700: hsl(6, 30%, 39%);
+    --wren-sand-800: hsl(5, 34%, 32%);
+    --wren-sand-900: hsl(6, 39%, 27%);
+    --wren-sand-950: hsl(5, 50%, 20%);
+
+    --wren-twilight-50: hsl(229, 23%, 91%);
+    --wren-twilight-100: hsl(226, 23%, 82%);
+    --wren-twilight-200: hsl(225, 23%, 72%);
+    --wren-twilight-300: hsl(225, 24%, 64%);
+    --wren-twilight-400: hsl(223, 23%, 55%);
+    --wren-twilight-500: hsl(221, 28%, 45%);
+    --wren-twilight-600: hsl(222, 27%, 38%);
+    --wren-twilight-700: hsl(222, 26%, 30%);
+    --wren-twilight-800: hsl(221, 25%, 23%);
+    --wren-twilight-900: hsl(223, 22%, 16%);
+    --wren-twilight-950: hsl(225, 17%, 9%);
+
+    --twitch: hsl(264, 100%, 64%);
+    --youtube: hsl(348, 100%, 50%);
+    --odysee: hsl(338, 100%, 44%);
+    --kick: hsl(104, 97%, 54%);
+    --tiktok: hsl(347, 99%, 58%);
+    --twitter: hsl(203, 89%, 53%);
+    --bluesky: hsl(211, 100%, 57%);
+    --mastodon: hsl(240, 100%, 69%);
+    --mastodon-2: hsl(252, 59%, 51%);
+    --mastodon-3: hsl(259, 82%, 13%);
+    --mastodon-4: hsl(259, 82%, 26%);
+    --mastodon-5: hsl(237, 92%, 75%);
+    --instagram: hsl(335, 100%, 50%);
+    --linktree: hsl(131, 77%, 58%);
+    --linktree-2: hsl(66, 80%, 52%);
+    --linktree-3: hsl(106, 50%, 21%);
+    --reddit: hsl(16, 100%, 50%);
+    --riot: hsl(359, 63%, 52%);
+    --valorant: hsl(355, 100%, 64%);
+    --steam: hsl(202, 87%, 68%);
+    --steam-2: hsl(203, 29%, 11%);
 }
 
 @layer base {

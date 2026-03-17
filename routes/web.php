@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
-Route::inertia('/', 'Welcome', [
+require __DIR__.'/socials.php';
+
+Route::inertia('/', 'Home', [
     'canRegister' => Features::enabled(Features::registration()),
 ])->name('home');
 
