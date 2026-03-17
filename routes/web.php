@@ -5,9 +5,7 @@ use Laravel\Fortify\Features;
 
 require __DIR__.'/socials.php';
 
-Route::inertia('/', 'Home', [
-    'canRegister' => Features::enabled(Features::registration()),
-])->name('home');
+Route::inertia('/', 'Home')->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'Dashboard')->name('dashboard');
