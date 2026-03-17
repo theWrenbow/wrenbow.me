@@ -14,7 +14,7 @@ defineProps<Props>();
 
 <template>
     <img
-        src="/images/wrenbow_avatar-small_rounded@400px.png"
+        src="/images/wrenbow_avatar-small_rounded@400px.webp"
         alt="𝚠𝚛𝚎𝚗𝚋𝚘𝚠🌈🕊️"
         :class="[ className + ' pointer-events-none select-none']"
         v-bind="$attrs"
