@@ -35,7 +35,7 @@
         <link rel="canonical" href="https://wrenbow.me" />
 
         <meta name="title" content="wrenbow🌈🕊️" />
-        <meta name="description" content="wrenbow🌈🕊️ — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
+        <meta name="description" content="@theWrenbow — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://wrenbow.me" />
@@ -44,13 +44,13 @@
         <meta property="og:locale" content="en_US" />
         {{-- <meta property="og:locale:alternate" content="de_DE" /> --}}
         {{-- <meta property="og:locale:alternate" content="es_ES" /> --}}
-        <meta property="og:description" content="wrenbow🌈🕊️ — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
+        <meta property="og:description" content="@theWrenbow — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
         <meta property="og:image" content="https://wrenbow.me/images/og/wrenbow-home.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://wrenbow.me" />
         <meta property="twitter:title" content="wrenbow🌈🕊️" />
-        <meta property="twitter:description" content="wrenbow🌈🕊️ — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
+        <meta property="twitter:description" content="@theWrenbow — software developer // rational thinker // meme connoisseur // denizen of the cyberpunk dystopia we call the 21st century" />
         <meta property="twitter:image" content="https://wrenbow.me/images/og/wrenbow-home.png" />
 
         <link rel="apple-touch-icon" sizes="57x57" href="/images/ico/apple-icon-57x57.png">
@@ -69,7 +69,7 @@
         <link rel="manifest" href="/site.webmanifest">
         <meta name="msapplication-TileColor" content="#fdbdb4">
         <meta name="msapplication-TileImage" content="/images/ico/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#fdbdb4">
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
