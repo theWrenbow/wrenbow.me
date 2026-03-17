@@ -28,3 +28,7 @@ yarn-error.log
 /.zed
 serve.zsh
 build.zsh
+
+**/caddy
+frankenphp
+frankenphp-worker.php
