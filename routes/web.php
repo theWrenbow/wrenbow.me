@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/socials.php';
+require __DIR__.'/redirects.php';
 
 Route::inertia('/', 'terminal/Terminal')->name('home');
 // Route::inertia('/ttyd', 'terminal/Terminal')->name('terminal');

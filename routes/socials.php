@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 $socialsUtmParams = 'utm_source=wrenbow.me&utm_medium=redirect&utm_campaign=social_links';
 
@@ -91,10 +90,3 @@ Route::redirect('/discord.gg', '/discord');
 Route::redirect('/discord.com', '/discord');
 Route::redirect('/dc', '/discord');
 Route::redirect('/dsc', '/discord');
-
-// Misc. Redirects
-Route::redirect('/aimbow-method-aimlabs', '/404')->name('AimRoutine.AimbowMethodAimlabs');
-Route::redirect('/aimbow-method-kovaaks', '/404')->name('AimRoutine.AimbowMethodKovaaks');
-Route::redirect('/aimbow-method-mini-aimlabs', '/404')->name('AimRoutine.AimbowMethodMiniAimlabs');
-Route::redirect('/aimbow-method-mini-kovaaks', '/404')->name('AimRoutine.AimbowMethodMiniKovaaks');
-Route::redirect('/aimstars-method', '/404')->name('AimRoutine.AimstarsMethod');
