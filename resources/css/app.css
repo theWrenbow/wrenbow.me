@@ -122,6 +122,8 @@
     --color-valorant: var(--valorant);
     --color-steam: var(--steam);
     --color-steam-2: var(--steam-2);
+    --color-github: var(--github);
+    --color-patreon: var(--patreon);
 
     --animate-wiggle: wiggle 1s ease-in-out infinite;
 
@@ -257,6 +259,8 @@
     --valorant: hsl(355, 100%, 64%);
     --steam: hsl(202, 87%, 68%);
     --steam-2: hsl(203, 29%, 11%);
+    --github: hsl(0, 0%, 9%);
+    --patreon: hsl(15, 100%, 50%);
 }
 
 .dark {
@@ -349,6 +353,8 @@
     --valorant: hsl(355, 100%, 64%);
     --steam: hsl(202, 87%, 68%);
     --steam-2: hsl(203, 29%, 11%);
+    --github: hsl(100, 100%, 97%);
+    --patreon: hsl(15, 100%, 50%);
 }
 
 @layer base {
