@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Laravel\Fortify\Features;
 
 require __DIR__.'/socials.php';
 
-Route::inertia('/', 'Home')->name('home');
+Route::inertia('/', 'terminal/Terminal')->name('home');
+// Route::inertia('/ttyd', 'terminal/Terminal')->name('terminal');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'Dashboard')->name('dashboard');
