@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-use Laravel\Fortify\Features;
 
 $socialsUtmParams = 'utm_source=wrenbow.me&utm_medium=redirect&utm_campaign=social_links';
 
@@ -19,6 +17,7 @@ $mastodonHandle = 'wrenbow';
 $instagramHandle = 'theWrenbow';
 $patreonHandle = 'wrenbow';
 $kofiHandle = 'theWrenbow';
+$githubHandle = 'theWrenbow';
 $discordInviteCode = 'aeud5wScpT';
 
 // Platform Redirects
@@ -34,10 +33,13 @@ Route::redirect('/mastodon', 'https://mastodon.social/@'.$mastodonHandle.'?'.$so
 Route::redirect('/instagram', 'https://www.instagram.com/'.$instagramHandle.'?'.$socialsUtmParams)->name('Socials.Instagram');
 Route::redirect('/patreon', 'https://www.patreon.com/c/'.$patreonHandle.'?'.$socialsUtmParams)->name('Socials.Patreon');
 Route::redirect('/kofi', 'https://ko-fi.com/'.$kofiHandle.'?'.$socialsUtmParams)->name('Socials.KoFi');
+Route::redirect('/github', 'https://github.com/'.$githubHandle.'?'.$socialsUtmParams)->name('Socials.GitHub');
 Route::redirect('/discord', 'https://discord.gg/'.$discordInviteCode.'?'.$socialsUtmParams)->name('Socials.DiscordServer');
 
 // Aliases
+Route::redirect('/tv', '/twitch');
 Route::redirect('/ttv', '/twitch');
+Route::redirect('/twitch-tv', '/twitch');
 Route::redirect('/twitch.tv', '/twitch');
 Route::redirect('/yt', '/youtube');
 Route::redirect('/youtu.be', '/youtube');
@@ -63,7 +65,9 @@ Route::redirect('/xtwitter', '/twitter');
 Route::redirect('/x-twitter', '/twitter');
 Route::redirect('/bluesky', '/bsky');
 Route::redirect('/bsky.app', '/bsky');
+Route::redirect('/bluesky.app', '/bsky');
 Route::redirect('/bsky.social', '/bsky');
+Route::redirect('/bluesky.social', '/bsky');
 Route::redirect('/mstdn', '/mastodon');
 Route::redirect('/mstdn.social', '/mastodon');
 Route::redirect('/mastodon.social', '/mastodon');
@@ -75,6 +79,10 @@ Route::redirect('/patreon.com', '/patreon');
 Route::redirect('/ko-fi', '/kofi');
 Route::redirect('/ko.fi', '/kofi');
 Route::redirect('/ko-fi.com', '/kofi');
+Route::redirect('/gh', '/github');
+Route::redirect('/github.com', '/github');
+Route::redirect('/git', '/github');
+Route::redirect('/git-hub', '/github');
 Route::redirect('/discordserver', '/discord');
 Route::redirect('/discord-server', '/discord');
 Route::redirect('/discord_server', '/discord');
@@ -82,10 +90,3 @@ Route::redirect('/discord.gg', '/discord');
 Route::redirect('/discord.com', '/discord');
 Route::redirect('/dc', '/discord');
 Route::redirect('/dsc', '/discord');
-
-// Misc. Redirects
-Route::redirect('/aimbow-method-aimlabs', '/404')->name('AimRoutine.AimbowMethodAimlabs');
-Route::redirect('/aimbow-method-kovaaks', '/404')->name('AimRoutine.AimbowMethodKovaaks');
-Route::redirect('/aimbow-method-mini-aimlabs', '/404')->name('AimRoutine.AimbowMethodMiniAimlabs');
-Route::redirect('/aimbow-method-mini-kovaaks', '/404')->name('AimRoutine.AimbowMethodMiniKovaaks');
-Route::redirect('/aimstars-method', '/404')->name('AimRoutine.AimstarsMethod');
