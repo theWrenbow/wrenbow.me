@@ -446,7 +446,7 @@ export const commands: CommandDefinition[] = [
     {
         name: 'cd',
         description: 'Change the current working directory',
-        usage: 'cd [directory]',
+        usage: 'cd &lt;directory&gt;',
         execute(args, ctx) {
             const target = args[0] ?? '~'
             const resolved = resolveAbsPath(ctx.currentDir.value, target, ctx.user)
@@ -472,7 +472,7 @@ export const commands: CommandDefinition[] = [
     {
         name: 'cat',
         description: 'Display the contents of a file',
-        usage: 'cat <file>',
+        usage: 'cat &lt;file&gt;',
         aliases: ['open'],
         execute(args, ctx) {
             if (args.length === 0) return [err('cat: missing file operand')]
