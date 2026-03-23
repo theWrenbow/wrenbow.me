@@ -46,7 +46,7 @@ const buttons = [
 ];
 </script>
 <template>
-    <MaintenanceLayout title="socials" :buttons="buttons" heading="my socials" :headingAnimated="false">
+    <MaintenanceLayout title="my socials" :buttons="buttons" heading="my socials" :headingAnimated="false">
         <Button variant="ghost" as-child>
             <Link
                 :href="toUrl(home().url)"
