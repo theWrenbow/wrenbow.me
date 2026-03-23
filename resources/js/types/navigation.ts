@@ -12,3 +12,12 @@ export type NavItem = {
     icon?: LucideIcon;
     isActive?: boolean;
 };
+
+export type ButtonItem = {
+    title: string;
+    href: NonNullable<InertiaLinkProps['href']>;
+    icon?: LucideIcon;
+    color?: string;
+    isHidden?: boolean;
+    openInNewTab?: boolean;
+};
