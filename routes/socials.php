@@ -18,7 +18,7 @@ $instagramHandle = 'theWrenbow';
 $patreonHandle = 'wrenbow';
 $kofiHandle = 'theWrenbow';
 $githubHandle = 'theWrenbow';
-$discordInviteCode = 'aeud5wScpT';
+$discordInviteCode = '5sHgsw8AUJ';
 
 // Platform Redirects
 Route::redirect('/twitch', 'https://twitch.tv/'.$twitchHandle.'?'.$socialsUtmParams)->name('Socials.Twitch');
